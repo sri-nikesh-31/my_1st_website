@@ -1,0 +1,162 @@
+body{
+    background-color: whitesmoke;
+}
+
+.home{
+    position: absolute;
+    left: 70%;
+}
+
+.Hi{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(3, 20, 54);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.about{
+    position: absolute;
+    left: 75%;
+}
+
+.contact{
+    position: absolute;
+    left: 80%;
+}
+
+.Heading{
+    left: 20%;
+    position: absolute;
+    float: left;
+    clear: both;
+    color: white;
+    font-weight: 700;
+}
+
+.Hi h1, .Hi h2{
+    display: inline;
+    font-weight: 700;
+    color: white;
+}
+
+.Hi h2{
+    font-size: medium;
+    float: left;
+    clear: both;
+}
+
+.location, .call{
+    width: 30px;
+}
+
+.email{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.cont_details .location, h3{
+    display: inline;
+}
+
+.cont_details{
+    margin-top: 6%;
+    margin-left: 25%;
+}
+
+.CALL{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.Email{
+    margin-left: 5px;
+}
+
+.cont_details p{
+    margin-top: 5px;
+}
+
+.cont_details .CALL, .EMAIL{
+    margin-top: 20px;
+    margin-left: -20px;
+    letter-spacing: 1px;
+}
+
+.LOCATION{
+    margin-left: -20px;
+}
+
+.building1{
+    width: 110%;
+     margin-left: -20px;
+     margin-top: -3px;
+}
+
+.all{
+    padding: 30px;
+    background-color: white;
+    width: 27%;
+}
+
+h3{
+    font-weight: 600;
+}
+
+hr{
+    border: none;
+    height: 4px;
+    width: 422px;
+    margin-left: 0%;
+    background-color: orangered;
+    margin-top: -20px;
+}
+
+.CONTACTUS{
+    float: left;
+    margin-top: -35%;
+    margin-left: 50%;
+    width: 28%;
+}
+
+.contactus{
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.CONTACTUS p{
+    letter-spacing: 1.5px;
+}
+
+h5{
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    margin-top: -15px;
+    width: 400px;
+}
+
+.msg{
+text-align: left;    
+height: 150px;
+}
+
+.username{
+    margin-top: -10px;
+}
+
+.EMail, .phone, .message{
+    margin-top: -33px;
+}
+
+.cssalign{
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+}
