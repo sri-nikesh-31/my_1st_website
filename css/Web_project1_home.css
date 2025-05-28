@@ -67,7 +67,7 @@ a{
     float: left;
     position: absolute;
     font-size: large;
-    left: 50%;
+    left: 49.6%;
     top: 50%;
     transform: translateY(-60%);
     transform: translateX(-52%);
@@ -76,6 +76,10 @@ a{
     width: 15%;
     text-align: center;
     padding: 10px;
+}
+
+.explore{
+    color: orangered;
 }
 
 .travelling h3{
@@ -128,6 +132,10 @@ a{
     border-radius: 20px;
 }
 
+.amore{
+    color: orangered;
+}
+
 .desert{
     float: left;
     height: 200px;
@@ -155,6 +163,10 @@ a{
     color: orangered;
     border: 2px solid orangered;
     border-radius: 20px;
+}
+
+.adesert{
+    color: orangered;
 }
 
 .background{
