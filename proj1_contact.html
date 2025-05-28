@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/proj1_contact.css" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="home" class="Hi">
+        <h1 class="Heading">WT</h1>
+        <h2 class="home"><a href="index.html">HOME</a></h2>
+        <h2 class="about"><a href="proj1_about.html">ABOUT</a></h2>
+        <h2 class="contact"><a href="proj1_contact.html">CONTACT</a></h2>
+    </div>
+
+    <div class="cont_details">
+        <div class="all">
+            <div class="LOCATION">
+                <img src="images/location-removebg-preview.png" alt="location" class="location" />
+                <h3>LOCATION</h3>
+                <p>#523001 Ongole, Prakasam</p>
+            </div>
+            <div class="EMAIL">
+                <img src="images/email_logo.png" alt="email" class="email" />
+                <h3 class="Email">E-MAIL</h3>
+                <p>ayinalasrinikesh@gmail.com</p>
+            </div>
+            <div class="CALL">
+                <img src="images/call_icon-removebg-preview.png" alt="call" class="call" />
+                <h3>CALL</h3>
+                <p>+911234567890</p>
+            </div>
+            <img src="images/building1.jpeg" alt="building" class="building1" />
+        </div>
+    </div>
+
+    <div class="CONTACTUS">
+        <div class="cssalign">
+            <h2 class="contactus">Contact Us</h2>
+            <hr />
+            <p>Let us know your questions, suggestions and concerns by filling out the contact form below</p>
+            <form method="post" id="contactForm">
+                <div class="username">
+                    <h5>Username<span style="color: red;"> *</span></h5>
+                    <input type="text" name="Username" placeholder="Enter user name" required /><br />
+                </div>
+                <div class="EMail">
+                    <h5>Email<span style="color: red;"> *</span></h5>
+                    <input type="email" name="Email" placeholder="Enter email" required /><br />
+                </div>
+                <div class="phone">
+                    <h5>Phone<span style="color: red;"> *</span></h5>
+                    <input type="tel" name="Phone" placeholder="Enter phone" required /><br />
+                </div>
+                <div class="message">
+                    <h5>Message<span style="color: red;"> *</span></h5>
+                    <input type="text" name="Message" placeholder="Type your message here" class="msg" required /><br />
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uzmooupuwATu75Gi_90w_7H2aLuVTQ7eua5u8U5_JBzUwl8zgnjYlw9kJBr31qmZXg/exec';
+
+                const form = document.getElementById('contactForm');
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    const formData = new FormData(form);
+
+                    fetch(scriptURL, {
+                        method: 'POST',
+                        body: new URLSearchParams(formData)
+                    })
+                    .then(response => response.text())
+                    .then(text => {
+                        alert('Form submitted successfully!');
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        alert('Error submitting form!');
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
